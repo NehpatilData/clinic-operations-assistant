@@ -1,0 +1,13 @@
+message_id,message,expected_category
+1,"I would like to book an appointment next Tuesday.",appointment_booking
+2,"Can I make an appointment for a general check-up?",appointment_booking
+3,"Could I move my appointment to Friday afternoon?",rescheduling
+4,"I need to change the time of my existing appointment.",rescheduling
+5,"Please cancel my upcoming appointment.",cancellation
+6,"I can no longer attend my scheduled appointment. Please cancel it.",cancellation
+7,"What time does your clinic close on weekdays?",clinic_information
+8,"Could you tell me the clinic address?",clinic_information
+9,"Do you offer bulk billing?",billing
+10,"I have a question about an invoice for my visit.",billing
+11,"I have a question that does not fit the other categories.",other
+12,"Could someone explain your referral process?",other
