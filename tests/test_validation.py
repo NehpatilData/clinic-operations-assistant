@@ -1,4 +1,4 @@
-from validation import is_valid_category
+from src.validation import is_valid_category, is_valid_status
 
 print(is_valid_category("billing"))
 print(is_valid_category("rescheduling"))
@@ -6,7 +6,7 @@ print(is_valid_category("appointment_change"))
 print(is_valid_category(None))
 print(is_valid_category(123))
 
-from validation import is_valid_status
+ 
 
 print(is_valid_status("new"))
 print(is_valid_status("in_progress"))
@@ -14,7 +14,7 @@ print(is_valid_status("completed"))
 print(is_valid_status("pending"))
 print(is_valid_status(None))
 
-from validation import has_required_fields
+from src.validation import has_required_fields
 
 complete_data = {
     "category": "rescheduling",
@@ -33,7 +33,7 @@ incomplete_data = {
 print(has_required_fields(complete_data))
 print(has_required_fields(incomplete_data))
 
-from validation import is_valid_review_flag
+from src.validation import is_valid_review_flag
 
 print(is_valid_review_flag(True))
 print(is_valid_review_flag(False))
@@ -41,7 +41,7 @@ print(is_valid_review_flag("yes"))
 print(is_valid_review_flag(1))
 print(is_valid_review_flag(None))
 
-from validation import is_valid_summary
+from src.validation import is_valid_summary
 
 print(is_valid_summary("The person wants to reschedule an appointment."))
 print(is_valid_summary(""))
@@ -49,7 +49,7 @@ print(is_valid_summary("   "))
 print(is_valid_summary(123))
 print(is_valid_summary(None))
 
-from validation import is_valid_missing_fields
+from src.validation import is_valid_missing_fields
 
 print(is_valid_missing_fields(["preferred_date"]))
 print(is_valid_missing_fields([]))
@@ -57,7 +57,7 @@ print(is_valid_missing_fields("preferred_date"))
 print(is_valid_missing_fields(["preferred_date", 123]))
 print(is_valid_missing_fields(None))
 
-from validation import is_valid_preferred_date
+from src.validation import is_valid_preferred_date
 
 print(is_valid_preferred_date("2026-11-05"))
 print(is_valid_preferred_date(None))
@@ -65,7 +65,7 @@ print(is_valid_preferred_date("05-11-2026"))
 print(is_valid_preferred_date("2026-02-30"))
 print(is_valid_preferred_date(123))
 
-from validation import is_valid_preferred_time
+from src.validation import is_valid_preferred_time
 
 print(is_valid_preferred_time("afternoon"))
 print(is_valid_preferred_time("10:30 AM"))
